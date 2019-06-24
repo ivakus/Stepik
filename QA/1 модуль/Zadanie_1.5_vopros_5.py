@@ -9,7 +9,7 @@ import time
 """
 
 link = "http://suninjuly.github.io/registration1.html"
-browser = webdriver.Chrome(r"C:\\Users\\Gazprom\\Downloads\\chromedriver.exe")
+browser = webdriver.Chrome()
 browser.get(link)
 time.sleep(2)
 el = browser.find_element_by_xpath('//div[@class="first_block"]/div[1]//input')
