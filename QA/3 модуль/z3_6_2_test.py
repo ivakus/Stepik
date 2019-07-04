@@ -17,7 +17,7 @@ links = [
 
 @pytest.fixture(scope="function")
 def browser():
-    browser_ = webdriver.Chrome(r"C:\\Users\\Gazprom\\Downloads\\chromedriver.exe")
+    browser_ = webdriver.Chrome()
     yield browser_
     browser_.close()
 
